@@ -1,0 +1,13 @@
+[ui]
+ignore=~/.hgignore-global
+
+[extensions]
+rebase =
+color =
+strip =
+shelve =
+graphlog =
+purge =
+
+[alias]
+blame = annotate --user --number
