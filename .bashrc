@@ -10,7 +10,7 @@ alias hg-ignored-randoms='hg st -i | grep -v target/ | grep -v /overlays/ | sed 
 
 function hg-all() {
     # Do some hg action on all repos in a folder
-    /bin/ls -1 | xargs -L1 hg $1 -R
+    /bin/ls -1 | xargs -L1 -I repo sh -c "echo repo: && hg update -R repo"
 }
 alias allin="hg-all in"
 
