@@ -1,0 +1,60 @@
+{
+    // UI
+    "font_size": 12,
+    "color_scheme": "Packages/Theme - Spaceblack/Color Schemes/Spaceblack-Monokai.tmTheme",
+    "theme": "Spaceblack.sublime-theme",
+    "bold_folder_labels": true,
+    "highlight_line": true,
+    "line_padding_bottom": 1,
+    "line_padding_top": 2,
+    "animation_enabled": true,
+    "tree_animation_enabled": true,
+    "caret_style": "phase",
+    "fade_fold_buttons": false,
+
+
+    // Development
+    "default_encoding": "UTF-8",
+    "default_line_ending": "unix",
+    "tab_size": 4,
+    "translate_tabs_to_spaces": true,
+    "trim_automatic_white_space": true,
+
+    // Project
+    "file_exclude_patterns":
+    [
+        "*~", "*.iml", ".hgtags"
+    ],
+    "folder_exclude_patterns":
+    [
+        ".hg",
+        ".settings"
+    ],
+        "binary_file_patterns":
+    [
+        "*.orig",
+        "*/target/*",
+        "*/lib/*",
+        "*/old/*",
+        "*.jpg",
+        "*.jpeg",
+        "*.png",
+        "*.gif",
+        "*.ttf",
+        "*.tga",
+        "*.dds",
+        "*.ico",
+        "*.eot",
+        "*.pdf",
+        "*.swf",
+        "*.jar",
+        "*.zip",
+        "*.min.*"
+    ],
+
+    // Random
+    "ignored_packages":
+    [
+        "Vintage"
+    ]
+}
