@@ -1,0 +1,18 @@
+defshell bash
+autodetach on
+
+vbell off
+startup_message off
+msgwait 1
+
+defscrollback 2048
+attrcolor b ".I"
+defbce "on"
+altscreen on
+
+## status lines
+hardstatus on
+hardstatus alwayslastline
+hardstatus string '%{= kG}%{C}Screen: %{c}%{= kG}[%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{C} %d-%m %{W}%c %{g}]'
+caption splitonly "%{.yK}%3n t"
+caption string "%{.c0}%3n %t"
