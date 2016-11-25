@@ -11,3 +11,4 @@ purge =
 
 [alias]
 blame = annotate --user --number
+clog = log -G --style compact -l 10
