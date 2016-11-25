@@ -1,7 +1,17 @@
 # Check if running in cygwin
 # $(uname -o) = "Cygwin" 
 
+#Config
+export EDITOR=vim
+#source ~/colors.sh 
+export PS1=$BGreen"\u"$NC"@"$Yellow"\h"$Cyan" \w"$NC"\n$ "
+
 #Alias
+alias aliasedit="vim ~/.bashrc"
+alias rela="source ~/.bashrc"
+alias ls='ls -l --color=auto'
+alias grep="grep --color"
+
 alias tree="tree -Ca" # Turn on colors and show hidden files
 alias treel"tree -Ca -L" # tree with a depth limit 
 
@@ -21,6 +31,6 @@ function v() {
 }
 
 function mkcd() {
-    mkdir $1
+    mkdir -p $1
     cd $1
 }
