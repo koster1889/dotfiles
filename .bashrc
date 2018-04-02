@@ -1,19 +1,25 @@
 # Check if running in cygwin
 # $(uname -o) = "Cygwin" 
 
+# Candidate:
+# Do nothing if not in interactive mode
+# [[ "$-" != *i* ]] && return
+
+##########
+
 #Config
 export EDITOR=vim
-#source ~/colors.sh 
+source ~/dev/env/git/dotfiles/colors.sh 
 export PS1=$BGreen"\u"$NC"@"$Yellow"\h"$Cyan" \w"$NC"\n$ "
 
 #Alias
-alias aliasedit="vim ~/.bashrc"
+alias aliasedit="vim ~/dev/env/git/dotfiles/.bashrc"
 alias rela="source ~/.bashrc"
 alias ls='ls -l --color=auto'
 alias grep="grep --color"
 
 alias tree="tree -Ca" # Turn on colors and show hidden files
-alias treel"tree -Ca -L" # tree with a depth limit 
+alias treel="tree -Ca -L" # tree with a depth limit 
 
 #Helpers
 alias hg-ignored-randoms='hg st -i | grep -v target/ | grep -v /overlays/ | sed -e "s/I //g"'
