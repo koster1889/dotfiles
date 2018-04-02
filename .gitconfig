@@ -1,0 +1,6 @@
+[ui]
+	name = koster1889
+	email = koster1889@gmail.com
+[alias]
+	hist = log --oneline --decorate
+	st = status
