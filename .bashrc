@@ -1,5 +1,4 @@
-# Check if running in cygwin
-# $(uname -o) = "Cygwin" 
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 # Candidate:
 # Do nothing if not in interactive mode
@@ -9,7 +8,7 @@
 
 #Config
 export EDITOR=vim
-source ~/dev/env/git/dotfiles/colors.sh 
+source ${DIR}/colors.sh 
 export PS1=$BGreen"\u"$NC"@"$Yellow"\h"$Cyan" \w"$NC"\n$ "
 
 #Alias
