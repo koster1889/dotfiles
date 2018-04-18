@@ -13,6 +13,7 @@ set directory=$HOME/.vim/swapfiles//
 set backupdir=$HOME/.vim/backup/ 
 "set nobackup
 
+set number
 set ruler
 set tabstop=4
 set shiftwidth=4
