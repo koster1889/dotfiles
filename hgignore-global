@@ -1,0 +1,21 @@
+syntax: glob
+
+*.pyc
+
+.idea
+node
+node_modules
+maven-unpack
+effective-pom
+*.iml
+*.ipr
+*.iws
+*.versionsBackup
+publish.properties
+.vscode
+
+target
+*/package-lock.json
+overlays
+
+*~
