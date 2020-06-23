@@ -1,6 +1,37 @@
-[ui]
-	name = koster1889
-	email = koster1889@gmail.com
+
+[user]
+        name = Johannes Andersson
+        email = johannes.andersson@jeppesen.com
+
 [alias]
-	hist = log --oneline --decorate
-	st = status
+    hist = log --oneline --graph --color --decorate -20
+    dt = difftool --dir-diff 
+    st = status
+    br = branch
+    brs = branch
+    out = !git fetch && git log FETCH_HEAD..
+    in = !git fetch && git log ..FETCH_HEAD
+
+[color "status"]
+    changed = blue
+    untracked = magenta
+
+[core]
+    editor = vim
+    excludesfile = ~/dev/env/dotfiles/gitignore-global
+    autocrlf = input
+
+#[url "https://github.com/"]
+##       insteadOf = git@github.com:
+##[url "https://"]
+##       insteadOf = git://
+
+[pull]
+    rebase = true
+
+[merge]
+    conflictStyle = diff3
+    log = true
+    stat = true
+    tool = meld
+

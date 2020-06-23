@@ -1,4 +1,3 @@
-defshell bash
 autodetach on
 
 vbell off

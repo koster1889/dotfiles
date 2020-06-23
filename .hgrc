@@ -1,7 +1,10 @@
 [ui]
-ignore=~/.hgignore-global
+ignore=~/dev/env/dotfiles/hgignore-global
+username=Johannes Andersson <johannes.andersson@jeppesen.com>
+email=johannes.andersson@jeppesen.com
 
 [extensions]
+hgext.bookmarks =
 rebase =
 color =
 strip =
@@ -12,3 +15,5 @@ purge =
 [alias]
 blame = annotate --user --number
 clog = log -G --style compact -l 10
+br = branch
+brs = branches
