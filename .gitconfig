@@ -1,7 +1,6 @@
-
 [user]
-        name = Johannes Andersson
-        email = johannes.andersson@jeppesen.com
+    name = Johannes Andersson
+    email = johannes.andersson@jeppesen.com
 
 [alias]
     hist = log --oneline --graph --color --decorate -20
@@ -34,4 +33,3 @@
     log = true
     stat = true
     tool = meld
-
