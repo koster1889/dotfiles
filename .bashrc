@@ -6,8 +6,14 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 ##########
 
-export NAMESPACE=purplehaze-crewaccess-pipelines
+export CA_NAMESPACE=purplehaze-crewaccess-pipelines
+export TIC_NAMESPACE=purplehaze-tic-pipelines
+export NAMESPACE=$CA_NAMESPACE
+#export NAMESPACE=$TIC_NAMESPACE
+
 export KUBECONFIG=~/.kube/$NAMESPACE.kubeconfig.yaml
+
+export WILDFLY_HOME="/home/johand/tools/wildfly-26.1.3.Final/"
 
 
 nvm use 14 --silent
@@ -21,7 +27,7 @@ alias gb="git branch"
 alias g="git"
 alias k=kubectl
 alias vnc="vncviewer -PreferredEncoding=ZRLE"
-export PATH="~/dev/env/scripturu/:~/dev/env/bin:$PATH"
+export PATH="~/dev/env/scripturu/:~/dev/env/bin/:$PATH"
 export MOZILLA_FIVE_HOME=/usr/lib/mozilla
 
 alias d="docker"
@@ -30,8 +36,8 @@ alias d="docker"
 export CREWMODULES_INCLUDE_DEBUG_SITE=true
 #export JAVA_HOME=/usr/lib/jvm/java-openjdk/
 #export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-11.0.14.1.1-5.fc35.x86_64/
-export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-11.0.15.0.10-1.fc36.x86_64/
-#export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk
+#export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-11.0.15.0.10-1.fc36.x86_64/
+export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk
 export PATH=$PATH:$JAVA_HOME/bin
 
 
