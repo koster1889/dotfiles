@@ -1,10 +1,18 @@
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-
+AD_USERNAME=johannes.andersson
 # Candidate:
 # Do nothing if not in interactive mode
 # [[ "$-" != *i* ]] && return
 
 ##########
+
+# Avoid duplicates
+HISTCONTROL=ignoredups:erasedups
+# When the shell exits, append to the history file instead of overwriting it
+shopt -s histappend
+
+# After each command, append to the history file and reread it
+# PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND$'\n'}history -a; history -c; history -r"
 
 export CA_NAMESPACE=purplehaze-crewaccess-pipelines
 export TIC_NAMESPACE=purplehaze-tic-pipelines
@@ -37,7 +45,8 @@ export CREWMODULES_INCLUDE_DEBUG_SITE=true
 #export JAVA_HOME=/usr/lib/jvm/java-openjdk/
 #export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-11.0.14.1.1-5.fc35.x86_64/
 #export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-11.0.15.0.10-1.fc36.x86_64/
-export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk
+#export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk
+export JAVA_HOME=/usr/lib/jvm/java-11-openjdk
 export PATH=$PATH:$JAVA_HOME/bin
 
 
